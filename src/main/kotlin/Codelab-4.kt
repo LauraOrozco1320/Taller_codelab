@@ -51,7 +51,6 @@ class SmartTvDevice(deviceName: String, deviceCategory: String) :
     override val deviceType = "Smart TV"
 
     private var speakerVolume by RangeRegulator(initialValue = 2, minValue = 0, maxValue = 100)
-
     private var channelNumber by RangeRegulator(initialValue = 1, minValue = 0, maxValue = 200)
 
     fun increaseSpeakerVolume() {
@@ -171,7 +170,6 @@ class RangeRegulator(
 fun main() {
     var smartDevice: SmartDevice = SmartTvDevice("Android TV", "Entertainment")
     smartDevice.turnOn()
-
     smartDevice = SmartLightDevice("Google Light", "Utility")
     smartDevice.turnOn()
 }
