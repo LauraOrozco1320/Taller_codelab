@@ -10,7 +10,7 @@ fun main() {
     }
      */
     val cupcake: (Int) -> String = {
-        "Have a cupcake!"
+        "Have a cupcake!."
     }
     val treatFunction = trickOrTreat(false,{"$it quarters" })
     val trickFunction = trickOrTreat(true,null)
